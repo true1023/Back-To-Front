@@ -11,7 +11,11 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/back-to-front/',
+    //This should be the URL path where your build.assetsRoot 
+    //will be served from over HTTP. In most cases, 
+    //this will be root (/).
+    // Only change this if your backend framework serves static assets with a path prefix. Internally, this is passed to Webpack as output.publicPath.
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
