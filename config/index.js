@@ -16,6 +16,7 @@ module.exports = {
     //will be served from over HTTP. In most cases, 
     //this will be root (/).
     // Only change this if your backend framework serves static assets with a path prefix. Internally, this is passed to Webpack as output.publicPath.
+    //This is refer to http://vuejs-templates.github.io/webpack/backend.html
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
