@@ -15,7 +15,7 @@
            </p>
         </div>
         <div class="desc_right">
-          <img src="/static/imgs/home.jpg">
+          <img src="static/imgs/home.jpg">
         </div>
     </el-row>
     <el-row class="head2">
