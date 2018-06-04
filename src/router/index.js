@@ -10,12 +10,10 @@ import HomeNodisplay from '@/components/home/Nodisplay'
 
 import Admin from '@/components/Admin'
 import AdminMain from '@/components/admin/Main'
-import AdminProduct from '@/components/admin/Product'
-import AdminOrder from '@/components/admin/Order'
-import AdminCategory from '@/components/admin/Category'
-import AdminLog from '@/components/admin/Log'
-import AdminUser from '@/components/admin/User'
-import AdminEmailGroup from '@/components/admin/EmailGroup'
+import AdminList from '@/components/admin/List'
+import AdminList1 from '@/components/admin/List1'
+import AdminList2 from '@/components/admin/List2'
+import AdminList3 from '@/components/admin/List3'
 
 
 const Empty = {
@@ -38,7 +36,7 @@ export default new Router({
           //因为在Home.vue组件中需要使用绝对路径动态显示菜单栏，所以这里的path使用绝对路径
       		{path: '/main', component: HomeMain, name: 'Home'},
           {path: '/navigation1', component: HomeNavigation1, name: 'navigation1'},
-          {path: '/navigation2', component: HomeNavigation2, name: 'navigation1'},
+          {path: '/navigation2', component: HomeNavigation2, name: 'navigation2'},
           {path: '/navigation3', component: HomeNavigation3, name: 'navigation3'},
           //hidden 为true 则不显示在菜单栏
           {path: '/nodisplay/:id', component: HomeNodisplay, name: 'Nodisplay', hidden: true},
@@ -52,7 +50,7 @@ export default new Router({
         name: 'Back',
   	    children:[
           {
-            path: '/admin',
+            path: '',
             component: AdminMain,
             name: "Control Panel",
             iconCls: 'fa fa-address-card',
@@ -61,24 +59,23 @@ export default new Router({
           {
             path: '', 
             component:Empty, 
-            name: "Products Manage", 
+            name: "Nav1", 
             iconCls: 'fa fa-address-card',
             children:[
               //因为在Admin.vue组件中需要使用绝对路径动态显示菜单栏，所以这里的path使用绝对路径
-              {path: '/admin/products', component: AdminProduct, name: "Products List"},
-              {path: '/admin/orders', component: AdminOrder, name: "Order List"},
-              {path: '/admin/Categories', component: AdminCategory, name: "Categories List"},
-              {path: '/admin/logs', component: AdminLog, name: "Inventory Log"}
+              {path: '/admin/item1', component: AdminList, name: "item1"},
+              {path: '/admin/item2', component: AdminList1, name: "item2"}
           ]},
           {
             path: '', 
             component:Empty, 
-            name: "Users Manage", 
+            name: "Nav2", 
             iconCls: 'fa fa-address-card',
             children:[
-              {path: '/admin/users', component: AdminUser, name: "Admin User"},
-              {path: '/admin/email', component: AdminEmailGroup, name: "Email Group"}
-          ]}
+              {path: '/admin/item3', component: AdminList2, name: "item3"},
+              {path: '/admin/item4', component: AdminList3, name: "item4"}
+          ]},
+         
   	    ]
     }
   ]

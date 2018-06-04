@@ -32,8 +32,8 @@ body {
       margin-bottom: 10px;
     }
     .el-button {
-      background-color:#fe7903;
-      border-color:#fe7903;
+      background-color:#2f54a3;
+      border-color:#2f54a3;
     }
 }
 .head-font {

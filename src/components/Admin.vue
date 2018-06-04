@@ -11,7 +11,7 @@
 			</el-col>
 			<el-col :span="4" class="userinfo">
 				<el-dropdown trigger="hover">
-					<span class="el-dropdown-link userinfo-inner">Welcome, {{sysUserName}}</span> 
+					<span class="el-dropdown-link userinfo-inner">Welcome, Qinluo</span> 
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item disabled>My messages(not availability)</el-dropdown-item>
 						<el-dropdown-item disabled>Setting (not availability)</el-dropdown-item>
@@ -62,7 +62,7 @@
 	export default {
 		data() {
 			return {
-				sysName: 'MSRAGift',
+				sysName: 'BACK-TO-FRONT',
 				collapsed: false,
 				sysUserName: '',
 				routes: ''
@@ -83,11 +83,6 @@
 			}
 		},
 		mounted() {
-			var user = sessionStorage.getItem('user');
-			if (user) {
-				user = JSON.parse(user);
-				this.sysUserName = user.name || '';
-			}
 			this.routes = this.$router.options.routes.find(u => u.name=='Back');
 		}
 	}
@@ -95,7 +90,7 @@
 
 <style  scoped  lang="scss">
 
-	$color:#fe7903;
+	$color:#2f54a3;
 	$color1:#20a0ff;
 	.container {
 		display: flex;

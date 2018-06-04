@@ -48,7 +48,6 @@ export default {
     }
   },
   mounted(){
-    this.role=user.role;
   },
 }
 </script>
