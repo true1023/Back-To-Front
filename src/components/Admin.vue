@@ -142,8 +142,8 @@
 			min-height: 93vh;
 			overflow: hidden;
 			aside {
-				flex: 0 0 230px;
-				width: 230px;
+				flex: auto;
+				max-width: 230px;
 				text-align: left;
 				.el-menu {
 					flex: 0 0 230px;
@@ -156,9 +156,10 @@
 				}
 			}
 			.content-container {
-				flex: 1;
+				flex: auto;
 				overflow-y: scroll;
 				padding: 20px;
+				width: 100%;
 				.breadcrumb-container {
 					display: flex;
 					justify-content: space-between;
@@ -166,8 +167,6 @@
 						width: 200px;
 						color: #475699;
 						text-align: left;
-					}
-					.breadcrumb-inner {
 					}
 				}
 				.content-wrapper {

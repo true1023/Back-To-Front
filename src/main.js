@@ -25,6 +25,12 @@ router.beforeEach((to, from, next) => {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data(){
+    return {
+      //这里写全局变量，在子组件中用 this.$root.username 使用
+      username: 'Qinluo',
+    }
+  },
   router,
   store,
   template: '<App/>',

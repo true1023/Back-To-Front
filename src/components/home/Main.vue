@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     toAdmin(){
-      this.$router.push({path:'/admin'})
+      this.$router.push({path:'/admin/main'})
       //console.log(this.windowWidth);
     }
   },

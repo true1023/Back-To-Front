@@ -50,7 +50,7 @@ export default new Router({
         name: 'Back',
   	    children:[
           {
-            path: '',
+            path: '/admin/main',
             component: AdminMain,
             name: "Control Panel",
             iconCls: 'fa fa-address-card',
